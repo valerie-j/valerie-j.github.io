@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://valerie-j.github.io/thesis-site",
+  "homepage": "https://valerie-j.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
