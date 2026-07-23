@@ -1,63 +1,29 @@
 import {
   FileText,
-  Download,
   Home,
-    GraduationCapIcon
+  GraduationCapIcon,
 } from "lucide-react";
 
 const menuItems = [
   {
     label: "Overview",
     icon: Home,
-    active: true,
+    page: "overview",
   },
   {
     label: "Thesis Documents",
     icon: FileText,
-  },
-  {
-    label: "Downloads",
-    icon: Download,
+    page: "documents",
   },
 ];
 
-export default function Sidebar() {
+export default function Sidebar({ page, setPage }) {
   return (
-    <aside
-      className="
-        fixed
-        left-0
-        top-0
-        h-screen
-        w-72
-        border-r
-        border-slate-800
-        bg-slate-950/80
-        p-8
-        text-white
-        backdrop-blur-xl
-      "
-    >
-      {/* Brand */}
-      <div>
-        <div
-          className="
-            mb-5
-            flex
-            h-12
-            w-12
-            items-center
-            justify-center
-            rounded-xl
-            {/*bg-gradient-to-br*/}
-            {/*from-cyan-400*/}
-            {/*to-blue-600*/}
-            shadow-lg
-            {/*shadow-cyan-500/20*/}
-          "
-        >
-          <GraduationCapIcon size={26} />
+    <aside className="fixed left-0 top-0 h-screen w-72 border-r border-slate-800 bg-slate-950/80 p-8 text-white backdrop-blur-xl">
 
+      <div className="mb-10">
+        <div className="flex h-12 w-12 items-center justify-center rounded-xl shadow-lg">
+          <GraduationCapIcon size={26} />
         </div>
       </div>
 
@@ -66,12 +32,14 @@ export default function Sidebar() {
       <nav className="mt-10 space-y-2">
         {menuItems.map((item) => {
           const Icon = item.icon;
+          const active = page === item.page;
 
           return (
-            <a
+            <button
               key={item.label}
+              onClick={() => setPage(item.page)}
               className={`
-                group
+                w-full
                 flex
                 items-center
                 gap-4
@@ -81,46 +49,26 @@ export default function Sidebar() {
                 text-sm
                 font-medium
                 transition-all
-                duration-200
 
                 ${
-                  item.active
-                    ? `
-                      bg-cyan-400/10
-                      text-cyan-300
-                      border
-                      border-cyan-400/20
-                    `
-                    : `
-                      text-slate-400
-                      hover:bg-slate-800/60
-                      hover:text-white
-                    `
+                  active
+                    ? "bg-cyan-400/10 text-cyan-300 border border-cyan-400/20"
+                    : "text-slate-400 hover:bg-slate-800 hover:text-white"
                 }
               `}
             >
               <span
-                className={`
-                  flex
-                  h-9
-                  w-9
-                  items-center
-                  justify-center
-                  rounded-lg
-                  transition
-
-                  ${
-                    item.active
-                      ? "bg-cyan-400/20"
-                      : "bg-slate-800 group-hover:bg-slate-700"
-                  }
-                `}
+                className={`flex h-9 w-9 items-center justify-center rounded-lg ${
+                  active
+                    ? "bg-cyan-400/20"
+                    : "bg-slate-800"
+                }`}
               >
                 <Icon size={18} />
               </span>
 
               {item.label}
-            </a>
+            </button>
           );
         })}
       </nav>
