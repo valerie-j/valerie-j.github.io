@@ -2,7 +2,12 @@ import { Download, FileText } from "lucide-react";
 
 export default function DocumentsPage() {
     const scopeDescriptions = [
-          {
+        {
+            title: "Scope description version 3",
+            description: "",
+            file: "/scopeDescriptionv3.pdf",
+        },
+        {
             title: "Scope description version 2",
             description: "",
             file: "/scopeDescriptionv2.pdf",
