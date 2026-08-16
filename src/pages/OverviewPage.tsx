@@ -9,16 +9,15 @@ export default function OverviewPage() {
           className="
             mt-2
             mr-2
+	    ml-2
             text-5xl
             font-extrabold
             text-white/90
             bg-clip-text
+	    text-center
           "
         >
-          Agentic LLM-Based Vulnerability-Oriented Test Generation
-          <span className="block text-center">
-            Test Generation for REST APIs
-          </span>
+         Agentic Test Generation for BOLA/IDOR Detection in REST APIs 
         </h1>
 
         <div className="mt-10 flex gap-4">

@@ -26,11 +26,6 @@ export default function DocumentsPage() {
                 Thesis Documents
             </h1>
 
-            <p className="mt-3 text-slate-400">
-                Here you can download the available thesis documents.
-            </p>
-
-
             {/* Scope Description Card */}
             <section
                 className="
@@ -64,10 +59,6 @@ export default function DocumentsPage() {
                         <h2 className="text-2xl font-semibold text-white">
                             Scope Descriptions
                         </h2>
-
-                        <p className="text-slate-400">
-                            Different versions of the thesis scope description.
-                        </p>
                     </div>
                 </div>
 
