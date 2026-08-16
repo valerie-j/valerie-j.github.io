@@ -19,14 +19,16 @@ Error generating stack: `+e.message+`
                 transition-all
 
                 ${i?`bg-cyan-400/10 text-cyan-300 border border-cyan-400/20`:`text-slate-400 hover:bg-slate-800 hover:text-white`}
-              `,children:[(0,w.jsx)(`span`,{className:`flex h-9 w-9 items-center justify-center rounded-lg ${i?`bg-cyan-400/20`:`bg-slate-800`}`,children:(0,w.jsx)(r,{size:18})}),n.label]},n.label)})})]})}function oe(){return(0,w.jsxs)(w.Fragment,{children:[(0,w.jsxs)(`section`,{children:[(0,w.jsxs)(`h1`,{className:`
+              `,children:[(0,w.jsx)(`span`,{className:`flex h-9 w-9 items-center justify-center rounded-lg ${i?`bg-cyan-400/20`:`bg-slate-800`}`,children:(0,w.jsx)(r,{size:18})}),n.label]},n.label)})})]})}function oe(){return(0,w.jsxs)(w.Fragment,{children:[(0,w.jsxs)(`section`,{children:[(0,w.jsx)(`h1`,{className:`
             mt-2
             mr-2
+	    ml-2
             text-5xl
             font-extrabold
             text-white/90
             bg-clip-text
-          `,children:[`Agentic LLM-Based Vulnerability-Oriented Test Generation`,(0,w.jsx)(`span`,{className:`block text-center`,children:`Test Generation for REST APIs`})]}),(0,w.jsx)(`div`,{className:`mt-10 flex gap-4`})]}),(0,w.jsxs)(`section`,{className:`
+	    text-center
+          `,children:`Agentic Test Generation for BOLA/IDOR Detection in REST APIs`}),(0,w.jsx)(`div`,{className:`mt-10 flex gap-4`})]}),(0,w.jsxs)(`section`,{className:`
           mt-16
           mr-4
           ml-4
@@ -59,7 +61,7 @@ Error generating stack: `+e.message+`
           text-white
           transition
           group-hover:bg-cyan-400/20
-        `,children:n}),(0,w.jsx)(`h2`,{className:`text-xl font-semibold text-white`,children:e}),(0,w.jsx)(`p`,{className:`mt-3 leading-relaxed text-slate-400`,children:t})]})}function ce(){return(0,w.jsxs)(w.Fragment,{children:[(0,w.jsx)(`h1`,{className:`text-4xl font-bold text-white`,children:`Thesis Documents`}),(0,w.jsx)(`p`,{className:`mt-3 text-slate-400`,children:`Here you can download the available thesis documents.`}),(0,w.jsxs)(`section`,{className:`
+        `,children:n}),(0,w.jsx)(`h2`,{className:`text-xl font-semibold text-white`,children:e}),(0,w.jsx)(`p`,{className:`mt-3 leading-relaxed text-slate-400`,children:t})]})}function ce(){return(0,w.jsxs)(w.Fragment,{children:[(0,w.jsx)(`h1`,{className:`text-4xl font-bold text-white`,children:`Thesis Documents`}),(0,w.jsxs)(`section`,{className:`
                     mt-10
                     rounded-3xl
                     border
@@ -76,7 +78,7 @@ Error generating stack: `+e.message+`
                             rounded-xl
                             bg-cyan-400/10
                             text-cyan-300
-                        `,children:(0,w.jsx)(x,{size:28})}),(0,w.jsxs)(`div`,{children:[(0,w.jsx)(`h2`,{className:`text-2xl font-semibold text-white`,children:`Scope Descriptions`}),(0,w.jsx)(`p`,{className:`text-slate-400`,children:`Different versions of the thesis scope description.`})]})]}),(0,w.jsx)(`div`,{className:`space-y-4`,children:[{title:`Scope description version 3`,description:``,file:`/scopeDescriptionv3.pdf`},{title:`Scope description version 2`,description:``,file:`/scopeDescriptionv2.pdf`},{title:`Scope description version 1`,description:``,file:`/scopeDescriptionv1.pdf`}].map(e=>(0,w.jsxs)(`div`,{className:`
+                        `,children:(0,w.jsx)(x,{size:28})}),(0,w.jsx)(`div`,{children:(0,w.jsx)(`h2`,{className:`text-2xl font-semibold text-white`,children:`Scope Descriptions`})})]}),(0,w.jsx)(`div`,{className:`space-y-4`,children:[{title:`Scope description version 3`,description:``,file:`/scopeDescriptionv3.pdf`},{title:`Scope description version 2`,description:``,file:`/scopeDescriptionv2.pdf`},{title:`Scope description version 1`,description:``,file:`/scopeDescriptionv1.pdf`}].map(e=>(0,w.jsxs)(`div`,{className:`
                                 flex
                                 items-center
                                 justify-between
