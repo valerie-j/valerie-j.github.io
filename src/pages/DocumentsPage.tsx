@@ -3,6 +3,11 @@ import { Download, FileText } from "lucide-react";
 export default function DocumentsPage() {
     const scopeDescriptions = [
         {
+            title: "Scope description version 4",
+            description: "",
+            file: "/scopeDescriptionv4.pdf",
+        },
+        {
             title: "Scope description version 3",
             description: "",
             file: "/scopeDescriptionv3.pdf",
@@ -17,7 +22,14 @@ export default function DocumentsPage() {
             description: "",
             file: "/scopeDescriptionv1.pdf",
         },
+    ];
 
+    const drafts = [
+        {
+            title: "Draft version 1",
+            description: "",
+            file: "/draftv1.pdf",
+        },
     ];
 
     return (
@@ -62,7 +74,6 @@ export default function DocumentsPage() {
                     </div>
                 </div>
 
-
                 {/* Documents */}
                 <div className="space-y-4">
                     {scopeDescriptions.map((doc) => (
@@ -91,6 +102,94 @@ export default function DocumentsPage() {
                                 </p>
                             </div>
 
+                            <a
+                                href={doc.file}
+                                download
+                                className="
+                                    flex
+                                    items-center
+                                    gap-2
+                                    rounded-xl
+                                    bg-cyan-500
+                                    px-5
+                                    py-3
+                                    font-semibold
+                                    text-white
+                                    transition
+                                    hover:bg-cyan-400
+                                "
+                            >
+                                <Download size={18} />
+                                Download
+                            </a>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* Drafts Card */}
+            <section
+                className="
+                    mt-8
+                    rounded-3xl
+                    border
+                    border-slate-800
+                    bg-slate-900/60
+                    p-8
+                    backdrop-blur-xl
+                "
+            >
+                {/* Card Header */}
+                <div className="mb-8 flex items-center gap-4">
+                    <div
+                        className="
+                            flex
+                            h-14
+                            w-14
+                            items-center
+                            justify-center
+                            rounded-xl
+                            bg-cyan-400/10
+                            text-cyan-300
+                        "
+                    >
+                        <FileText size={28} />
+                    </div>
+
+                    <div>
+                        <h2 className="text-2xl font-semibold text-white">
+                            Drafts
+                        </h2>
+                    </div>
+                </div>
+
+                {/* Documents */}
+                <div className="space-y-4">
+                    {drafts.map((doc) => (
+                        <div
+                            key={doc.title}
+                            className="
+                                flex
+                                items-center
+                                justify-between
+                                rounded-2xl
+                                border
+                                border-slate-800
+                                bg-slate-950/50
+                                p-5
+                                transition
+                                hover:border-cyan-400/40
+                            "
+                        >
+                            <div>
+                                <h3 className="text-lg font-semibold text-white">
+                                    {doc.title}
+                                </h3>
+
+                                <p className="text-sm text-slate-400">
+                                    {doc.description}
+                                </p>
+                            </div>
 
                             <a
                                 href={doc.file}
@@ -119,3 +218,4 @@ export default function DocumentsPage() {
         </>
     );
 }
+
