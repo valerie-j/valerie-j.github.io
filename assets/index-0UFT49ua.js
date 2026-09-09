@@ -78,7 +78,47 @@ Error generating stack: `+e.message+`
                             rounded-xl
                             bg-cyan-400/10
                             text-cyan-300
-                        `,children:(0,w.jsx)(x,{size:28})}),(0,w.jsx)(`div`,{children:(0,w.jsx)(`h2`,{className:`text-2xl font-semibold text-white`,children:`Scope Descriptions`})})]}),(0,w.jsx)(`div`,{className:`space-y-4`,children:[{title:`Draft version 1`,description:``,file:`/draftv1.pdf`},{title:`Scope description version 4`,description:``,file:`/scopeDescriptionv4.pdf`},{title:`Scope description version 3`,description:``,file:`/scopeDescriptionv3.pdf`},{title:`Scope description version 2`,description:``,file:`/scopeDescriptionv2.pdf`},{title:`Scope description version 1`,description:``,file:`/scopeDescriptionv1.pdf`}].map(e=>(0,w.jsxs)(`div`,{className:`
+                        `,children:(0,w.jsx)(x,{size:28})}),(0,w.jsx)(`div`,{children:(0,w.jsx)(`h2`,{className:`text-2xl font-semibold text-white`,children:`Scope Descriptions`})})]}),(0,w.jsx)(`div`,{className:`space-y-4`,children:[{title:`Scope description version 4`,description:``,file:`/scopeDescriptionv4.pdf`},{title:`Scope description version 3`,description:``,file:`/scopeDescriptionv3.pdf`},{title:`Scope description version 2`,description:``,file:`/scopeDescriptionv2.pdf`},{title:`Scope description version 1`,description:``,file:`/scopeDescriptionv1.pdf`}].map(e=>(0,w.jsxs)(`div`,{className:`
+                                flex
+                                items-center
+                                justify-between
+                                rounded-2xl
+                                border
+                                border-slate-800
+                                bg-slate-950/50
+                                p-5
+                                transition
+                                hover:border-cyan-400/40
+                            `,children:[(0,w.jsxs)(`div`,{children:[(0,w.jsx)(`h3`,{className:`text-lg font-semibold text-white`,children:e.title}),(0,w.jsx)(`p`,{className:`text-sm text-slate-400`,children:e.description})]}),(0,w.jsxs)(`a`,{href:e.file,download:!0,className:`
+                                    flex
+                                    items-center
+                                    gap-2
+                                    rounded-xl
+                                    bg-cyan-500
+                                    px-5
+                                    py-3
+                                    font-semibold
+                                    text-white
+                                    transition
+                                    hover:bg-cyan-400
+                                `,children:[(0,w.jsx)(b,{size:18}),`Download`]})]},e.title))})]}),(0,w.jsxs)(`section`,{className:`
+                    mt-8
+                    rounded-3xl
+                    border
+                    border-slate-800
+                    bg-slate-900/60
+                    p-8
+                    backdrop-blur-xl
+                `,children:[(0,w.jsxs)(`div`,{className:`mb-8 flex items-center gap-4`,children:[(0,w.jsx)(`div`,{className:`
+                            flex
+                            h-14
+                            w-14
+                            items-center
+                            justify-center
+                            rounded-xl
+                            bg-cyan-400/10
+                            text-cyan-300
+                        `,children:(0,w.jsx)(x,{size:28})}),(0,w.jsx)(`div`,{children:(0,w.jsx)(`h2`,{className:`text-2xl font-semibold text-white`,children:`Drafts`})})]}),(0,w.jsx)(`div`,{className:`space-y-4`,children:[{title:`Draft version 1`,description:``,file:`/draftv1.pdf`}].map(e=>(0,w.jsxs)(`div`,{className:`
                                 flex
                                 items-center
                                 justify-between
