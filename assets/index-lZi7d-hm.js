@@ -28,7 +28,7 @@ Error generating stack: `+e.message+`
             text-white/90
             bg-clip-text
 	    text-center
-          `,children:`Agentic Test Generation for BOLA/IDOR Detection in REST APIs`}),(0,w.jsx)(`div`,{className:`mt-10 flex gap-4`})]}),(0,w.jsxs)(`section`,{className:`
+          `,children:`Agentic LLM-based Security Testing for BOLA in REST APIs`}),(0,w.jsx)(`div`,{className:`mt-10 flex gap-4`})]}),(0,w.jsxs)(`section`,{className:`
           mt-16
           mr-4
           ml-4
