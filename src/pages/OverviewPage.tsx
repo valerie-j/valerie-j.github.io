@@ -17,7 +17,7 @@ export default function OverviewPage() {
 	    text-center
           "
         >
-         Agentic Test Generation for BOLA/IDOR Detection in REST APIs 
+	 Agentic LLM-based Security Testing for BOLA in REST APIs
         </h1>
 
         <div className="mt-10 flex gap-4">
