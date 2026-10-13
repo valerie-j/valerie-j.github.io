@@ -31,6 +31,11 @@ export default function DocumentsPage() {
 
     const drafts = [
         {
+            title: "Draft version 2",
+            description: "",
+            file: "/draftv2.pdf",
+        },
+        {
             title: "Draft version 1",
             description: "",
             file: "/draftv1.pdf",
