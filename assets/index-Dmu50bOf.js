@@ -118,7 +118,7 @@ Error generating stack: `+e.message+`
                             rounded-xl
                             bg-cyan-400/10
                             text-cyan-300
-                        `,children:(0,w.jsx)(x,{size:28})}),(0,w.jsx)(`div`,{children:(0,w.jsx)(`h2`,{className:`text-2xl font-semibold text-white`,children:`Drafts`})})]}),(0,w.jsx)(`div`,{className:`space-y-4`,children:[{title:`Draft version 1`,description:``,file:`/draftv1.pdf`}].map(e=>(0,w.jsxs)(`div`,{className:`
+                        `,children:(0,w.jsx)(x,{size:28})}),(0,w.jsx)(`div`,{children:(0,w.jsx)(`h2`,{className:`text-2xl font-semibold text-white`,children:`Drafts`})})]}),(0,w.jsx)(`div`,{className:`space-y-4`,children:[{title:`Draft version 2`,description:``,file:`/draftv2.pdf`},{title:`Draft version 1`,description:``,file:`/draftv1.pdf`}].map(e=>(0,w.jsxs)(`div`,{className:`
                                 flex
                                 items-center
                                 justify-between
